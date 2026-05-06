@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Utility Hub | gernet ai voice  text to voic gernet ai password</title>
+    <style>
+        /* --- CSS Styling --- */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Nunito', sans-serif; }
+        body { background-color: #f8f9fa; color: #212529; }
+
+        /* Header & Donate Button */
+        header { background: #2c3e50; color: #fff; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative; }
+        header h1 { font-size: 28px; font-weight: 800; }
+        header p { opacity: 0.9; margin-top: 5px; margin-bottom: 15px; }
+
+        .donate-btn {
+            background: #e74c3c; color: white; border: none; padding: 10px 25px; font-size: 16px; font-weight: bold; border-radius: 30px; cursor: pointer; box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4); animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            15% { transform: scale(1.1); }
+            30% { transform: scale(1); }
+            45% { transform: scale(1.1); }
+            60% { transform: scale(1); }
+        }
+
+        .container { max-width: 900px; margin: 30px auto; padding: 0 15px; }
+
+        /* Tabs (Menu Buttons) */
+        .tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .tab-btn { flex: 1; min-width: 140px; background: #fff; border: 2px solid transparent; padding: 12px; font-size: 15px; font-weight: 600; cursor: pointer; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: 0.3s; color: #495057; }
+        .tab-btn:hover { background: #e9ecef; }
+        .tab-btn.active { background: #2980b9; color: white; box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4); }
+        
+        /* Bonus Tab Styling */
+        .bonus-tab { background: linear-gradient(45deg, #8e44ad, #9b59b6); color: white; font-weight: 800; }
+        .bonus-tab.active { background: #212529; color: #fff;}
+
+        /* Tool Sections */
+        .tool-section { display: none; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); animation: fadeIn 0.4s ease; }
+        .tool-section.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+
+        .tool-section h2 { margin-bottom: 20px; color: #343a40; border-bottom: 2px solid #f8f9fa; padding-bottom: 10px; }
+
+        /* Inputs & Buttons */
+        input, textarea, select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ced4da; border-radius: 8px; font-size: 16px; outline: none; transition: 0.3s; }
+        input:focus, textarea:focus { border-color: #2980b9; box-shadow: 0 0 5px rgba(41, 128, 185, 0.3); }
+        
+        .action-btn { background: #27ae60; color: white; border: none; padding: 15px; font-size: 16px; font-weight: 800; border-radius: 8px; cursor: pointer; width: 100%; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
+        .action-btn:hover { background: #2ecc71; }
+        .bonus-btn { background: #8e44ad; }
+        .bonus-btn:hover { background: #9b59b6; }
+
+        /* Output Box */
+        .result-box { background: #e8f8f5; padding: 15px; border-left: 5px solid #1abc9c; border-radius: 5px; font-size: 18px; font-weight: bold; margin-top: 15px; color: #2c3e50; word-wrap: break-word; }
+
+        .counters { display: flex; gap: 15px; margin-bottom: 15px; }
+        .count-box { flex: 1; background: #f8f9fa; padding: 15px; text-align: center; border-radius: 8px; border: 1px solid #dee2e6; }
+        .count-box span { display: block; font-size: 24px; font-weight: 800; color: #2980b9; }
+
+        /* --- Donation Modal (Popup) CSS --- */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); z-index: 100; justify-content: center; align-items: center; padding: 20px; }
+        .modal-box { background: white; width: 100%; max-width: 450px; padding: 30px; border-radius: 15px; text-align: center; position: relative; animation: popUp 0.3s ease-out; }
+        @keyframes popUp { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        
+        .close-btn { position: absolute; top: 15px; right: 20px; font-size: 28px; cursor: pointer; color: #888; font-weight: bold; transition: 0.3s;}
+        .close-btn:hover { color: #e74c3c; }
+
+        .modal-box h3 { color: #e74c3c; margin-bottom: 15px; font-size: 24px; }
+        .modal-box p { color: #555; line-height: 1.6; margin-bottom: 20px; font-size: 15px; }
+        
+        .donation-img { width: 200px; height: 200px; object-fit: contain; margin: 0 auto 15px; display: block; border: 2px dashed #bdc3c7; border-radius: 10px; padding: 5px; }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section with Donate Button -->
+    <header>
+        <h1>🛠️ Mega Tools Hub</h1>
+        <p>100% Free Tools - Run for a Noble Cause</p>
+        <button class="donate-btn" onclick="openDonateModal()">❤️ Donate for Stray Animals</button>
+    </header>
+
+    <div class="container">
+        
+        <!-- Navigation Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('word')">📝 Word Counter</button>
+            <button class="tab-btn" onclick="switchTab('age')">📅 Age Calc</button>
+            <button class="tab-btn" onclick="switchTab('password')">🔐 Password</button>
+            <button class="tab-btn" onclick="switchTab('bmi')">⚖️ BMI Calc</button>
+            <button class="tab-btn bonus-tab" onclick="switchTab('bonus')">🎁 BONUS: Audio Reader</button>
+        </div>
+
+        <!-- 1. Word Counter -->
+        <div id="word" class="tool-section active">
+            <h2>Word & Character Counter</h2>
+            <div class="counters">
+                <div class="count-box"><span id="wordCount">0</span> Words</div>
+                <div class="count-box"><span id="charCount">0</span> Characters</div>
+            </div>
+            <textarea id="textInput" rows="6" placeholder="Type or paste your text here..." oninput="countText()"></textarea>
+            <button class="action-btn" onclick="document.getElementById('textInput').value=''; countText();">Clear Text</button>
+        </div>
+
+        <!-- 2. Age Calculator -->
+        <div id="age" class="tool-section">
+            <h2>Age Calculator</h2>
+            <label style="font-weight: bold;">Enter your Date of Birth:</label>
+            <input type="date" id="dobInput">
+            <button class="action-btn" onclick="calculateAge()">Calculate Age</button>
+            <div class="result-box" id="ageResult">Your age will appear here.</div>
+        </div>
+
+        <!-- 3. Password Generator -->
+        <div id="password" class="tool-section">
+            <h2>Strong Password Generator</h2>
+            <label style="font-weight: bold;">Password Length: <span id="lenDisplay">12</span></label>
+            <input type="range" id="passLength" min="6" max="32" value="12" oninput="document.getElementById('lenDisplay').innerText = this.value">
+            <button class="action-btn" onclick="generatePassword()">Generate Password</button>
+            <div class="result-box" id="passResult">Click generate...</div>
+        </div>
+
+        <!-- 4. BMI Calculator -->
+        <div id="bmi" class="tool-section">
+            <h2>BMI Calculator</h2>
+            <input type="number" id="weight" placeholder="Weight in KG (e.g., 70)">
+            <input type="number" id="height" placeholder="Height in CM (e.g., 175)">
+            <button class="action-btn" onclick="calculateBMI()">Check BMI</button>
+            <div class="result-box" id="bmiResult">Result will appear here.</div>
+        </div>
+
+        <!-- 5. BONUS FEATURE: Text to Audio -->
+        <div id="bonus" class="tool-section">
+            <h2>🎙️ AI Text Reader</h2>
+            <p style="margin-bottom: 15px; color: #666;">Paste any text and the AI will read it aloud for you!</p>
+            <textarea id="speechText" rows="5" placeholder="Enter text to listen..."></textarea>
+            <button class="action-btn bonus-btn" onclick="speakText()">🔊 Read Aloud</button>
+        </div>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- DONATION POPUP MODAL (EDIT IMAGE LINK HERE) -->
+    <!-- ========================================== -->
+    <div class="modal-overlay" id="donateModal">
+        <div class="modal-box">
+            <span class="close-btn" onclick="closeDonateModal()">&times;</span>
+            
+            <h3>🐾 Help Stray Animals</h3>
+            <p>100% of this donation goes towards feeding, medical treatment, and sheltering stray animals like cows and street dogs. Your small contribution can save a life!</p>
+            
+            <!-- 👇 BHAI YAHAN APNI IMAGE YA QR CODE KA LINK PASTE KARNA 👇 -->
+            <img src="https://www.image2url.com/r2/default/images/1778061282194-e11c2102-5ef1-4291-88cb-6a9661c3da23.png" alt="Donation QR Code" class="donation-img">
+            <!-- 👆 Upar jo 'src=' ke andar link hai use hatakar apne image ka link daal dena 👆 -->
+
+            <p style="font-size: 13px; color: #e74c3c; font-weight: bold;">Scan the QR Code to donate via UPI.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Modal Logic
+        function openDonateModal() {
+            document.getElementById('donateModal').style.display = 'flex';
+        }
+        function closeDonateModal() {
+            document.getElementById('donateModal').style.display = 'none';
+        }
+
+        // Tab Switching Function
+        function switchTab(tabId) {
+            document.querySelectorAll('.tool-section').forEach(sec => sec.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // 1. Word Counter
+        function countText() {
+            let text = document.getElementById('textInput').value;
+            let chars = text.length;
+            let words = text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
+            
+            document.getElementById('charCount').innerText = chars;
+            document.getElementById('wordCount').innerText = words;
+        }
+
+        // 2. Age Calculator
+        function calculateAge() {
+            let dob = document.getElementById('dobInput').value;
+            if(!dob) { document.getElementById('ageResult').innerText = "Please select your date of birth first!"; return; }
+            
+            let birthDate = new Date(dob);
+            let today = new Date();
+            
+            let age = today.getFullYear() - birthDate.getFullYear();
+            let m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) { age--; }
+            
+            document.getElementById('ageResult').innerHTML = `You are <strong>${age} Years</strong> old! 🎉`;
+        }
+
+        // 3. Password Generator
+        function generatePassword() {
+            let len = document.getElementById('passLength').value;
+            let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
+            let pass = "";
+            for(let i=0; i<len; i++) {
+                pass += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            document.getElementById('passResult').innerText = pass;
+        }
+
+        // 4. BMI Logic
+        function calculateBMI() {
+            let w = document.getElementById('weight').value;
+            let h = document.getElementById('height').value / 100;
+            if(!w || !h) { document.getElementById('bmiResult').innerText = "Please enter valid weight and height."; return; }
+            
+            let bmi = (w / (h * h)).toFixed(2);
+            let status = "";
+            if(bmi < 18.5) status = "Underweight";
+            else if(bmi < 24.9) status = "Normal";
+            else if(bmi < 29.9) status = "Overweight";
+            else status = "Obese";
+
+            document.getElementById('bmiResult').innerHTML = `BMI: <strong>${bmi}</strong> <br> Status: <strong>${status}</strong>`;
+        }
+
+        // 5. Bonus Text to Speech
+        function speakText() {
+            let text = document.getElementById('speechText').value;
+            if(text.trim() === "") { alert("Please enter some text to read!"); return; }
+            window.speechSynthesis.cancel();
+            
+            let speech = new SpeechSynthesisUtterance(text);
+            speech.lang = "en-IN"; 
+            speech.rate = 0.9;
+            speech.pitch = 1;
+            
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+</body>
+</html>
